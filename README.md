@@ -152,3 +152,20 @@ Handles payment transactions for bookings. It ensures that funds are securely pr
 🔎 Search and Filter
 Allows users to search for properties by location, price, availability, and other criteria. Improves usability by helping guests find listings that match their needs quickly.
 
+🔐 API Security
+Securing the backend APIs is critical to protect user data, prevent abuse, and ensure trust in the platform. Below are the key security measures implemented in this project:
+
+🔑 Authentication
+We use secure authentication mechanisms (e.g., JWT or OAuth 2.0) to verify the identity of users before granting access to protected endpoints. This ensures that only legitimate users can access or modify their own data.
+
+🛂 Authorization
+Role-based access control (RBAC) ensures that users can only perform actions permitted by their role (e.g., guests cannot create listings, only hosts can). This prevents unauthorized access to restricted operations.
+
+📉 Rate Limiting
+API rate limiting is implemented to prevent abuse and protect the platform from denial-of-service (DoS) attacks. This limits how many requests a user or IP address can make in a specific timeframe.
+
+🔒 Data Protection
+All sensitive data (e.g., passwords, payment details) is encrypted both in transit (via HTTPS) and at rest. This protects user information from eavesdropping and unauthorized access.
+
+🧪 Input Validation & Sanitization
+All incoming data is validated and sanitized to prevent injection attacks (e.g., SQL injection, XSS). This enhances the integrity and stability of the backend system.

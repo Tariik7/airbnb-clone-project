@@ -131,3 +131,24 @@ One Property can have many Bookings and Reviews.
 One Booking has one Payment.
 
 
+✨ Feature Breakdown
+This project replicates the core functionality of the Airbnb platform. Below are the main features and their roles in delivering a complete user experience:
+
+👤 User Management
+Allows users to register, log in, and manage their profiles. Users can act as hosts (listing properties) or guests (booking stays), with roles and permissions handled accordingly.
+
+🏠 Property Management
+Hosts can create, update, and delete property listings. Each listing includes essential details like title, description, images, pricing, and location, allowing guests to browse and search easily.
+
+📅 Booking System
+Enables guests to reserve properties for specific date ranges. The system handles booking availability, prevents double-booking, and links bookings to both users and properties.
+
+⭐ Review and Rating System
+After a stay, guests can leave reviews and rate the property. This promotes trust within the platform and helps other users make informed decisions based on feedback.
+
+💳 Payment Processing
+Handles payment transactions for bookings. It ensures that funds are securely processed and provides status updates (e.g., paid, pending) linked to each reservation.
+
+🔎 Search and Filter
+Allows users to search for properties by location, price, availability, and other criteria. Improves usability by helping guests find listings that match their needs quickly.
+

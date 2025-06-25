@@ -169,3 +169,26 @@ All sensitive data (e.g., passwords, payment details) is encrypted both in trans
 
 🧪 Input Validation & Sanitization
 All incoming data is validated and sanitized to prevent injection attacks (e.g., SQL injection, XSS). This enhances the integrity and stability of the backend system.
+
+
+⚙️ CI/CD Pipeline
+Continuous Integration and Continuous Deployment (CI/CD) pipelines automate the process of building, testing, and deploying code. This ensures that every change pushed to the repository is automatically validated and safely deployed to production or staging environments.
+
+CI/CD is essential for:
+
+Faster Development Cycles: Automates repetitive tasks like testing and deployment.
+
+Higher Code Quality: Catches bugs early through automated tests.
+
+Consistent Deployments: Reduces the risk of human error during deployment.
+
+Team Collaboration: Enables smoother integration of code from multiple developers.
+
+🛠️ Tools Used:
+GitHub Actions: Automates workflows such as running tests, linting code, and deploying builds after each push or pull request.
+
+Docker: Creates consistent environments for development, testing, and production by containerizing the application.
+
+(Optional) Heroku / AWS / Vercel: Used for automated deployment to cloud platforms.
+
+(Optional) PostgreSQL Service Container: For setting up database services in the CI pipeline.

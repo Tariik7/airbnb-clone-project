@@ -43,3 +43,91 @@ A containerization platform used to package the application and its dependencies
 
 ☁️ AWS (Amazon Web Services)
 Used for deploying and hosting the application in the cloud, providing scalability, reliability, and various
+
+
+🗃️ Database Design
+The database schema is designed to support core functionality such as user management, property listings, bookings, reviews, and payments. Below are the key entities and their relationships:
+
+👤 Users
+Stores information about registered users.
+
+id: Unique identifier
+
+name: Full name of the user
+
+email: User's email address
+
+password_hash: Encrypted password
+
+role: Specifies if the user is a host, guest, or admin
+
+🏠 Properties
+Represents property listings created by hosts.
+
+id: Unique identifier
+
+title: Name of the property
+
+description: Detailed description
+
+location: Address or city
+
+price_per_night: Cost per night in local currency
+
+Relation: A user (host) can own multiple properties.
+
+📅 Bookings
+Stores information about property reservations.
+
+id: Unique identifier
+
+user_id: References the guest making the booking
+
+property_id: References the booked property
+
+start_date: Check-in date
+
+end_date: Check-out date
+
+Relation: A booking belongs to one user and one property.
+
+⭐ Reviews
+Captures user feedback for a property.
+
+id: Unique identifier
+
+user_id: References the reviewer
+
+property_id: References the reviewed property
+
+rating: Numeric score (e.g., 1 to 5)
+
+comment: Optional text review
+
+Relation: A user can write multiple reviews; each review is for one property.
+
+💳 Payments
+Tracks payment transactions for bookings.
+
+id: Unique identifier
+
+booking_id: References the related booking
+
+amount: Total payment amount
+
+status: Payment status (e.g., completed, pending)
+
+payment_date: Date the payment was processed
+
+Relation: Each payment is linked to one booking.
+
+Entity Relationships Summary:
+One User can list many Properties.
+
+One User can make many Bookings.
+
+One Property can have many Bookings and Reviews.
+
+One Booking has one Payment.
+
+
